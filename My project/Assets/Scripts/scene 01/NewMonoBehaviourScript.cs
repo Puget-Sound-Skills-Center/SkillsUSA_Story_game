@@ -8,6 +8,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public GameObject Fadein;
     public GameObject Mark;
     public GameObject Emily;
+    public GameObject TextBox;
+
+    //[SerializeField] AudioSource
+    //[SerializeField] AudioSource 
+
+    [SerializeField] string textToSpeak;
+    [SerializeField] int CurrentTextLength;
+    [SerializeField] int textLength;
+    [SerializeField] GameObject maintextObject;
+
+    void Update()
+    {
+        textLength = TextCreator.CharCount;
+    }
 
     void Start()
     {
@@ -21,6 +35,23 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Mark.SetActive(true);
         yield return new WaitForSeconds(2);
         //where text will go
+        TextBox.GetComponent<TMPro.TMP_Text>().text = textToSpeak;
+        CurrentTextLength = textToSpeak.Length;
+        TextCreator.runTextPrint = true;
+        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(1);
+        yield return new WaitUntil(() => textLength == CurrentTextLength);
+        yield return new WaitForSeconds(0.05f);
+
+
+
+
+
+
+
+        maintextObject.SetActive(true);
+        textToSpeak = "hi";
+        TextBox.SetActive(true);
         yield return new WaitForSeconds(2);
         Emily.SetActive(true);
 
