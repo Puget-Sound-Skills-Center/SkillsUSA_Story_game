@@ -5,27 +5,11 @@ using UnityEngine;
 
 public class TextCreator : MonoBehaviour
 {
-
-
-
-
-
-
-
-
-
-
-
     public static TMPro.TMP_Text viewText;
     public static bool runTextPrint;
     public static int CharCount;
     [SerializeField] string transferext;
     [SerializeField] int internalcount;
-
-
-
-
-
     private void Update()
     {
         internalcount = CharCount;

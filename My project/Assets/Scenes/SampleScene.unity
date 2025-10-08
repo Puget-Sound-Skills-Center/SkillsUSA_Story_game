@@ -157,7 +157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: b566e1515ec18ee4c90306087391c2de, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -188,7 +188,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -721, y: 53.908}
+  m_AnchoredPosition: {x: -633, y: 108}
   m_SizeDelta: {x: 393.599, y: 322.183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &212288196
@@ -216,7 +216,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212288196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -225,7 +225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 768, y: -382}
+  m_AnchoredPosition: {x: 536.42, y: -219}
   m_SizeDelta: {x: 1072.831, y: 1679.515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212288198
@@ -1151,11 +1151,11 @@ MonoBehaviour:
   Fadein: {fileID: 637541593}
   Mark: {fileID: 212288196}
   Emily: {fileID: 10588593}
-  TextBox: {fileID: 0}
+  TextBox: {fileID: 981037498}
   textToSpeak: 
   CurrentTextLength: 0
   textLength: 0
-  maintextObject: {fileID: 0}
+  maintextObject: {fileID: 1257211778}
 --- !u!4 &1513342837
 Transform:
   m_ObjectHideFlags: 0
