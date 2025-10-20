@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class NewMonoBehaviourScript : MonoBehaviour
+public class Script1 : MonoBehaviour
 {
 
     public GameObject Fadein;
@@ -23,7 +22,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         textLength = TextCreator.CharCount;
     }
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(EventStarter());
     }
@@ -35,15 +34,17 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Mark.SetActive(true);
         yield return new WaitForSeconds(2);
         //where text will go
+        maintextObject.SetActive(true);
+        //textToSpeak = "hello";
         //TextBox.GetComponent<TMPro.TMP_Text>().text = textToSpeak;
-        CurrentTextLength = textToSpeak.Length;
+        //CurrentTextLength = textToSpeak.Length;
         TextCreator.runTextPrint = true;
         yield return new WaitForSeconds(0.05f);
         yield return new WaitForSeconds(1);
         yield return new WaitUntil(() => TextCreator.CharCount == CurrentTextLength);
         yield return new WaitForSeconds(0.05f);
         maintextObject.SetActive(true);
-        textToSpeak = "hi";
+        textToSpeak = "";
         TextBox.SetActive(true);
         yield return new WaitForSeconds(2);
         Emily.SetActive(true);

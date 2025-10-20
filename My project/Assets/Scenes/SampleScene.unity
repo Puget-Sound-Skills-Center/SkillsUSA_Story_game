@@ -188,8 +188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -633, y: 108}
-  m_SizeDelta: {x: 393.599, y: 322.183}
+  m_AnchoredPosition: {x: -744.33, y: -407}
+  m_SizeDelta: {x: 779.98, y: 1080.894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &212288196
 GameObject:
@@ -225,8 +225,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 536.42, y: -219}
-  m_SizeDelta: {x: 1072.831, y: 1679.515}
+  m_AnchoredPosition: {x: 848, y: -407}
+  m_SizeDelta: {x: 809.39, y: 1245.524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212288198
 MonoBehaviour:
@@ -519,7 +519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.12, y: 3.8865}
+  m_AnchoredPosition: {x: -2.12, y: 3.8865051}
   m_SizeDelta: {x: 1920.1, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &637541595
@@ -678,8 +678,8 @@ RectTransform:
   - {fileID: 10588596}
   - {fileID: 981037499}
   - {fileID: 984353263}
-  - {fileID: 1257211779}
   - {fileID: 1136088364}
+  - {fileID: 1257211779}
   - {fileID: 637541594}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -720,9 +720,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 702414029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.0671, y: -347.19897}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -1.0671, y: 192.80103}
   m_SizeDelta: {x: 1922.2, y: 377.729}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981037500
@@ -792,9 +792,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 702414029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -828.44, y: -182.75993}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 131.56, y: -182.75993}
   m_SizeDelta: {x: 267.448, y: 48.859}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &984353264
@@ -928,10 +928,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 702414029}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -744.21, y: -205.19}
-  m_SizeDelta: {x: 435.92, y: 8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 215.78998, y: 334.81}
+  m_SizeDelta: {x: 435.92004, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136088365
 MonoBehaviour:
@@ -1128,7 +1128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1513342837}
-  - component: {fileID: 1513342836}
+  - component: {fileID: 1513342838}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1136,26 +1136,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1513342836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513342835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e96d39fc89d79234e9f021531c881cdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Fadein: {fileID: 637541593}
-  Mark: {fileID: 212288196}
-  Emily: {fileID: 10588593}
-  TextBox: {fileID: 981037498}
-  textToSpeak: 
-  CurrentTextLength: 0
-  textLength: 0
-  maintextObject: {fileID: 1257211778}
 --- !u!4 &1513342837
 Transform:
   m_ObjectHideFlags: 0
@@ -1171,6 +1151,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513342838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513342835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2178140da8cf2f4387c779fca1a7194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fadein: {fileID: 637541593}
+  Mark: {fileID: 212288196}
+  Emily: {fileID: 10588593}
+  TextBox: {fileID: 981037498}
+  textToSpeak: 
+  CurrentTextLength: 0
+  textLength: 0
+  maintextObject: {fileID: 1257211778}
 --- !u!1 &1635557975
 GameObject:
   m_ObjectHideFlags: 0
