@@ -19,7 +19,7 @@ public class TextCreator : MonoBehaviour
             runTextPrint = false;
             viewText = GetComponent<TMPro.TMP_Text>();
             transferext = viewText.text;
-            viewText.text = "";
+            viewText.text = "this is a test";
             StartCoroutine(RollText());
         }
     }

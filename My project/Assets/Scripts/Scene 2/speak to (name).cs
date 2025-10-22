@@ -1,16 +1,15 @@
 using UnityEngine;
+using TMPro;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class ChangeUIText : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public TextMeshProUGUI textMeshPro; // Assign in the Inspector
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeText(string newText)
     {
-        
+        if (textMeshPro != null)
+        {
+            textMeshPro.text = newText;
+        }
     }
 }
