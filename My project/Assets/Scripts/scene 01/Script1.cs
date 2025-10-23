@@ -31,10 +31,11 @@ public class Script1 : MonoBehaviour
 
     IEnumerator EventStarter()
     {
-        yield return new WaitForSeconds(1);
-        Fadein.SetActive(false);
+        yield return new WaitForSeconds(5);
         Mark.SetActive(true);
-        yield return new WaitForSeconds(1);
+        Emily.SetActive(true);
+        yield return new WaitForSeconds(2);
+        Fadein.SetActive(false);
         //where text will go
         textToSpeak = "";
         Name.GetComponent<TMPro.TMP_Text>().text = textToSpeak;
@@ -51,7 +52,7 @@ public class Script1 : MonoBehaviour
         maintextObject.SetActive(true);
         speaktext.SetActive(true);
         yield return new WaitForSeconds(2);
-        Emily.SetActive(true);
+
 
 
     }
