@@ -1,9 +1,8 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
 public class Script1 : MonoBehaviour
 {
-
     public GameObject Fadein;
     public GameObject Mark;
     public GameObject Emily;
@@ -21,7 +20,7 @@ public class Script1 : MonoBehaviour
 
     void Update()
     {
-        textLength = TextCreator.CharCount;
+        textLength = TypewriterText.CharCount; // <- changed from TextCreator
     }
 
     private void Start()
@@ -29,12 +28,20 @@ public class Script1 : MonoBehaviour
         StartCoroutine(EventStarter());
     }
 
+    IEnumerator WaitForFrames(int frameCount)
+    {
+        for (int i = 0; i < frameCount; i++)
+            yield return null; // wait one frame
+
+        Debug.Log($"{frameCount} frames have passed!");
+    }
+
     IEnumerator EventStarter()
     {
-        yield return new WaitForSeconds(5);
         Mark.SetActive(true);
         Emily.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(6);
+        StartCoroutine(WaitForFrames(140));
         Fadein.SetActive(false);
         //where text will go
         textToSpeak = "";
@@ -42,18 +49,15 @@ public class Script1 : MonoBehaviour
         TextBox.SetActive(true);
         Name.SetActive(true);
         CurrentTextLength = textToSpeak.Length;
-        TextCreator.runTextPrint = true;
+        TypewriterText.runTextPrint = true; // <- changed from TextCreator
         print("pre wait");
         yield return new WaitForSeconds(0.05f);
-       // yield return new WaitForSeconds(1);
+        // yield return new WaitForSeconds(1);
         //yield return new WaitUntil(() => TextCreator.CharCount == CurrentTextLength);
-       // yield return new WaitForSeconds(0.05f);
-       // print("post wait");
+        // yield return new WaitForSeconds(0.05f);
+        // print("post wait");
         maintextObject.SetActive(true);
         speaktext.SetActive(true);
         yield return new WaitForSeconds(2);
-
-
-
     }
 }
