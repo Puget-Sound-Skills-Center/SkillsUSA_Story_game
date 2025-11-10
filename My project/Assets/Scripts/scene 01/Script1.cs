@@ -3,12 +3,19 @@ using UnityEngine;
 
 public class Script1 : MonoBehaviour
 {
+    public Animator animator;      // Assign in Inspector
+    public string triggerName = "Play"; // The Animator trigger
+    public KeyCode keyToPress = KeyCode.Space; // Which key to wait for
+
+    private bool hasPlayed = false;
+
     public GameObject Fadein;
     public GameObject Mark;
     public GameObject Emily;
     public GameObject TextBox;
     public GameObject speaktext;
     public GameObject Name;
+    public GameObject introtext;
 
     //[SerializeField] AudioSource
     //[SerializeField] AudioSource 
@@ -28,22 +35,35 @@ public class Script1 : MonoBehaviour
         StartCoroutine(EventStarter());
     }
 
-    IEnumerator WaitForFrames(int frameCount)
+    IEnumerator WaitForButtonPress(KeyCode keyToPress)
     {
-        for (int i = 0; i < frameCount; i++)
-            yield return null; // wait one frame
+        Debug.Log($"Waiting for {keyToPress} to be pressed...");
 
-        Debug.Log($"{frameCount} frames have passed!");
+        // Wait until the specified key is pressed
+        while (!Input.GetKeyDown(keyToPress))
+            yield return null;
+
+        Debug.Log($"{keyToPress} was pressed!"); 
+        if (!hasPlayed)
+        {
+            animator.SetTrigger(triggerName);
+            hasPlayed = true;
+            Debug.Log("Animation triggered!");
+        }
+
     }
+
 
     IEnumerator EventStarter()
     {
         Mark.SetActive(true);
         Emily.SetActive(true);
-        yield return new WaitForSeconds(6);
-        StartCoroutine(WaitForFrames(140));
+        yield return StartCoroutine(WaitForButtonPress(KeyCode.Space));
+        introtext.SetActive(false);
+        yield return new WaitForSeconds(3);
         Fadein.SetActive(false);
         //where text will go
+        yield return new WaitForSeconds(2);
         textToSpeak = "";
         Name.GetComponent<TMPro.TMP_Text>().text = textToSpeak;
         TextBox.SetActive(true);
