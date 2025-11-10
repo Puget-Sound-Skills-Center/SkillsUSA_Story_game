@@ -205,6 +205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetText: {fileID: 984353264}
+  speaktext: {fileID: 1257211780}
+  customMessage: Default custom message
 --- !u!1 &26236179
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetText: {fileID: 984353264}
+  speaktext: {fileID: 1257211780}
+  customMessage: Default custom message
 --- !u!1 &250714115
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,10 +745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a573c31569991114e9dcdb9222363e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 637541598}
-  triggerName: Play
-  keyToPress: 32
-  hasPlayed: 0
 --- !u!1 &702414025
 GameObject:
   m_ObjectHideFlags: 0
