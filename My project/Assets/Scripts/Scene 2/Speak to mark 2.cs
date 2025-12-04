@@ -1,18 +1,14 @@
- using UnityEngine;
+using UnityEngine;
 
 public class TextController : MonoBehaviour
 {
-    public ClickRawImageToChangeText clickScript; // Assign in Inspector or find it via code
+    public ClickRawImageToChangeText[] clickScripts;
 
     void Start()
     {
-        // Example: Set a new custom message
-        if (clickScript != null)
-        {
-            clickScript.SetCustomMessage("This was changed from another script!");
-
-            // Trigger the same effect as if the user clicked the image
-            clickScript.UpdateTexts();
-        }
+        // Example: set unique messages for each clickable object
+        clickScripts[0].SetCustomMessage("You clicked the Sword!");
+        clickScripts[1].SetCustomMessage("You clicked the Shield!");
+        clickScripts[2].SetCustomMessage("You clicked the Potion!");
     }
 }

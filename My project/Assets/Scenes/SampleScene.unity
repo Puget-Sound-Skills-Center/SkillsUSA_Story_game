@@ -204,8 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetText: {fileID: 984353264}
-  speaktext: {fileID: 1257211780}
   customMessage: emily also lowkey stinks but less like feet and more like beans
 --- !u!1 &26236179
 GameObject:
@@ -364,8 +362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetText: {fileID: 984353264}
-  speaktext: {fileID: 1257211780}
   customMessage: Mark, he lowkey stinks
 --- !u!1 &250714115
 GameObject:
@@ -391,7 +387,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250714115}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48409136e450e75498da593be0fa8190, type: 3}
   m_Name: 
@@ -548,6 +544,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &607862790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607862792}
+  - component: {fileID: 607862791}
+  m_Layer: 0
+  m_Name: textmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &607862791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607862790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1cb5d878c0a0f4a847a1f3db1abd0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outputText: {fileID: 1257211780}
+  typeSpeed: 0.02
+--- !u!4 &607862792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607862790}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 375.45383, y: 286.9957, z: -14.00903}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1469,6 +1511,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1513342837}
   - component: {fileID: 1513342838}
+  - component: {fileID: 1513342839}
+  - component: {fileID: 1513342840}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1518,6 +1562,34 @@ MonoBehaviour:
   CurrentTextLength: 0
   textLength: 0
   maintextObject: {fileID: 1257211778}
+--- !u!114 &1513342839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513342835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customMessage: Default custom message
+--- !u!114 &1513342840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513342835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 369727185fb143749a9ad7d5e8316200, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickScripts:
+  - {fileID: 212288201}
+  - {fileID: 10588597}
 --- !u!1 &1635557975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,3 +1751,4 @@ SceneRoots:
   - {fileID: 1856668984}
   - {fileID: 1513342837}
   - {fileID: 250714117}
+  - {fileID: 607862792}

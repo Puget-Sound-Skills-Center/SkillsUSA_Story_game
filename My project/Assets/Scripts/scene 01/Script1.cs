@@ -71,13 +71,7 @@ public class Script1 : MonoBehaviour
         TextBox.SetActive(true);
         Name.SetActive(true);
         CurrentTextLength = textToSpeak.Length;
-        TypewriterText.runTextPrint = true; // <- changed from TextCreator
-        print("pre wait");
-        yield return new WaitForSeconds(0.05f);
-        // yield return new WaitForSeconds(1);
-        //yield return new WaitUntil(() => TextCreator.CharCount == CurrentTextLength);
-        // yield return new WaitForSeconds(0.05f);
-        // print("post wait");
+        TypewriterText.runTextPrint = true; // <- changed from TextCreator 
         maintextObject.SetActive(true);
         speaktext.SetActive(true);
         yield return new WaitForSeconds(2);
