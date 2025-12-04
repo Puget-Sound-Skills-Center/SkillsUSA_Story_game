@@ -16,6 +16,7 @@ public class Script1 : MonoBehaviour
     public GameObject speaktext;
     public GameObject Name;
     public GameObject introtext;
+    public GameObject hinttext;
 
     //[SerializeField] AudioSource
     //[SerializeField] AudioSource 
@@ -60,6 +61,7 @@ public class Script1 : MonoBehaviour
         Emily.SetActive(true);
         yield return StartCoroutine(WaitForButtonPress(KeyCode.Space));
         introtext.SetActive(false);
+        hinttext.SetActive(false);
         yield return new WaitForSeconds(3);
         Fadein.SetActive(false);
         //where text will go

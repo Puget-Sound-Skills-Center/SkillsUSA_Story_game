@@ -49,3 +49,4 @@ public class ClickRawImageToChangeText : MonoBehaviour, IPointerClickHandler
         }
     }
 }
+ 
