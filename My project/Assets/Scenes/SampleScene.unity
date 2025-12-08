@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 10588596}
   - component: {fileID: 10588595}
   - component: {fileID: 10588594}
+  - component: {fileID: 10588598}
   - component: {fileID: 10588597}
   m_Layer: 5
   m_Name: Emily
@@ -201,10 +202,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 10588593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ec52008cb5e84c4d877a4657be5b1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customMessage: emily also lowkey stinks but less like feet and more like beans
+  customMessage: 
+--- !u!65 &10588598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10588593}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &26236179
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +311,7 @@ GameObject:
   - component: {fileID: 212288199}
   - component: {fileID: 212288198}
   - component: {fileID: 212288201}
+  - component: {fileID: 212288200}
   m_Layer: 5
   m_Name: Mark
   m_TagString: Untagged
@@ -350,7 +373,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212288196}
   m_CullTransparentMesh: 1
---- !u!114 &212288201
+--- !u!114 &212288200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -359,10 +382,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 212288196}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ec52008cb5e84c4d877a4657be5b1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customMessage: Mark, he lowkey stinks
+  customMessage: 
+--- !u!65 &212288201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212288196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &250714115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1555,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1513342837}
   - component: {fileID: 1513342838}
-  - component: {fileID: 1513342839}
   - component: {fileID: 1513342840}
   m_Layer: 0
   m_Name: GameObject
@@ -1562,19 +1605,6 @@ MonoBehaviour:
   CurrentTextLength: 0
   textLength: 0
   maintextObject: {fileID: 1257211778}
---- !u!114 &1513342839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1513342835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f0cf13f8538eaf4bbf8de6e96314fd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customMessage: Default custom message
 --- !u!114 &1513342840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1588,7 +1618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickScripts:
-  - {fileID: 212288201}
+  - {fileID: 212288200}
+  - {fileID: 10588597}
   - {fileID: 10588597}
 --- !u!1 &1635557975
 GameObject:

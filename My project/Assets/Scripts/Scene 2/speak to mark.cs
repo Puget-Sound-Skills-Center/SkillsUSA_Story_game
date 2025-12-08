@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 
 public class ClickRawImageToChangeText : MonoBehaviour
 {
@@ -21,3 +21,4 @@ public class ClickRawImageToChangeText : MonoBehaviour
     }
 }
 
+*/

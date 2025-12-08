@@ -16,7 +16,16 @@ public class ClickRawImageToChangeText : MonoBehaviour
 
     public void UpdateTexts()
     {
-        Debug.Log(customMessage);
-        // update UI text here
+        Debug.Log("Clicked: " + customMessage);
+
+        if (TextDisplayManager.Instance != null)
+        {
+            TextDisplayManager.Instance.ShowMessage(customMessage);
+        }
+        else
+        {
+            Debug.LogError("TextDisplayManager.Instance is NULL!");
+        }
     }
 }
+

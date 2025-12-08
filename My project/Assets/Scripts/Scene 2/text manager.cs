@@ -5,21 +5,26 @@ using System.Collections;
 public class TextDisplayManager : MonoBehaviour
 {
     public static TextDisplayManager Instance;
-    public TMP_Text outputText;  // Assign in Inspector
+    public TMP_Text outputText;
     public float typeSpeed = 0.02f;
 
     private Coroutine typingCoroutine;
-
-    private void Awake()
-    {
-        Instance = this;
-    }
     private bool isTyping = false;
     private string currentMessage;
 
+    private void Awake()
+    {
+        // Safe singleton
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
+
     public void ShowMessage(string msg)
     {
-        // If already typing, skip instantly
         if (isTyping)
         {
             SkipTyping();
@@ -52,7 +57,6 @@ public class TextDisplayManager : MonoBehaviour
     {
         if (!isTyping) return;
 
-        // Instantly show full message
         outputText.text = currentMessage;
         isTyping = false;
 
