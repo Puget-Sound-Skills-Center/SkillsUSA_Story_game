@@ -617,9 +617,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 7ec52008cb5e84c4d877a4657be5b1e0, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 444417650}
+        m_TargetAssemblyTypeName: ClickRawImageToChangeText, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -741,7 +741,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customMessage: 
-  objectsToDeactivate: []
+  objectsToDeactivate:
+  - {fileID: 212288196}
+  - {fileID: 1260882945}
+  - {fileID: 566288176}
+  - {fileID: 2146503815}
   objectsToActivate: []
   hierarchyIndex: 0
   hierarchyActivator: {fileID: 0}
